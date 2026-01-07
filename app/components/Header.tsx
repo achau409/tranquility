@@ -13,7 +13,7 @@ export default function Header() {
           <Link href="/">
             <div className="">
               <p className="text-white md:text-4xl font-semibold">
-                Tranquility bath Remodel
+                Tranquility Bath Remodel
               </p>
             </div>
             <div className="flex items-center gap-2 mt-3 max-w-[100px]">

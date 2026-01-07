@@ -13,7 +13,10 @@ export default function HomePage() {
   return (
     <div className="font-sans">
       {/* Hero Section */}
-      <section className="relative text-[#ffffff] flex items-center min-h-[500px] md:h-[550px] pt-20 md:pt-0">
+      <section
+        className="relative text-[#ffffff] flex items-center min-h-[500px] md:h-[550px] pt-20 md:pt-0"
+        id="hero"
+      >
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -101,7 +104,7 @@ export default function HomePage() {
       </section>
       <section className="py-12 bg-[#F5F5F5] " id="about">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
-          <div className="flex flex-col md:flex-row md:items-start items-center justify-between md:gap-12 gap-4">
+          <div className="flex flex-col-reverse md:flex-row md:items-start items-center justify-between md:gap-12 gap-4">
             <Image
               src="/aboutImg.png"
               alt="Business Meeting"
@@ -155,7 +158,7 @@ export default function HomePage() {
         <div className="relative z-10 mx-auto w-full max-w-5xl px-4 md:px-0">
           <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-8 items-center">
             {/* Headline and Text */}
-            <div className="max-w-[45%]">
+            <div className="md:max-w-[45%]">
               <h2 className="text-xl md:text-4xl font-bold text-white mb-4 md:mb-6">
                 Let's Build the Bathroom <br />
                 You've Been Dreaming Of
@@ -177,9 +180,12 @@ export default function HomePage() {
 
             {/* Call to Action Button */}
             <div className="flex justify-center items-center w-full md:w-auto">
-              <button className="bg-[#569BFE] text-white rounded-[50px] font-bold  py-4 px-8 md:px-12 text-lg hover:bg-[#4A8FE8] transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap">
+              <Link
+                href="#hero"
+                className="bg-[#569BFE] text-white rounded-[50px] font-bold py-4 px-8 md:px-12 text-lg hover:bg-[#4A8FE8] transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap inline-block"
+              >
                 Let's Build Your Dream Bathroom
-              </button>
+              </Link>
             </div>
           </div>
         </div>

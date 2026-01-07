@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Services() {
   const services = [
@@ -81,9 +82,12 @@ export default function Services() {
 
         {/* Call to Action Button */}
         <div className="flex justify-center">
-          <button className="bg-gradient-to-r from-[#569BFE] to-[#4A8FE8] text-white font-bold rounded-[50px] py-4 px-8 md:px-12 text-lg md:text-xl hover:from-[#4A8FE8] hover:to-[#569BFE] transition-all duration-300 shadow-lg hover:shadow-xl">
+          <Link
+            href="#hero"
+            className="bg-gradient-to-r from-[#569BFE] to-[#4A8FE8] text-white font-bold rounded-[50px] py-4 px-8 md:px-12 text-lg md:text-xl hover:from-[#4A8FE8] hover:to-[#569BFE] transition-all duration-300 shadow-lg hover:shadow-xl inline-block"
+          >
             Get Your FREE Consultation
-          </button>
+          </Link>
         </div>
       </div>
     </section>
