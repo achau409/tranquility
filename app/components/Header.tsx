@@ -78,8 +78,8 @@ export default function Header() {
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
-          <div className="absolute top-28 left-0 right-0 bg-white shadow-lg md:hidden z-50 transition-all duration-300">
-            <nav className="flex flex-col p-4 space-y-4">
+          <div className="absolute top-40 left-0 right-0 bg-white shadow-lg md:hidden z-50 transition-all duration-300 py-6">
+            <nav className="flex flex-col p-4 space-y-6">
               <Link
                 href="/#why-us"
                 className="hover:underline cursor-pointer"

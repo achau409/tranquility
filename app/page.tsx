@@ -127,7 +127,7 @@ export default function HomePage() {
                 solutions. Our certified team is dedicated to providing premium
                 American-made products while upholding values of trust,
                 transparency, and care. Customer satisfaction is always our top
-                priority. We are your trusted partner for modern shower
+                priority.  <br /> We are your trusted partner for modern shower
                 upgrades, walk-in tubs, and complete bathroom remodels. With our
                 personalized approach and lifetime warranty, you'll experience
                 the difference of working with a company that values your
