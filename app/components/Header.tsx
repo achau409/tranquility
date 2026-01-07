@@ -35,7 +35,7 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-10 text-white font-bold text-sm uppercase">
-          <Link href="/" className="hover:underline cursor-pointer">
+          <Link href="/#why-us" className="hover:underline cursor-pointer">
             Why Us
           </Link>
           <Link href="/#services" className="hover:underline cursor-pointer">

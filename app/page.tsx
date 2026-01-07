@@ -84,16 +84,16 @@ export default function HomePage() {
       <section>
         <Gallery />
       </section>
-      <section>
+      <section id="why-us">
         <WhyUs />
       </section>
       <section>
         <Discount />
       </section>
-      <section>
+      <section id="services">
         <Servicess />
       </section>
-      <section>
+      <section id="why-choose">
         <WhyChose />
       </section>
       <section>
