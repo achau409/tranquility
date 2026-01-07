@@ -65,7 +65,7 @@ export default function HowItWorks() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-6 md:p-8 shadow-md hover:shadow-lg hover:translate-y-[-10px] transition-all duration-500"
+              className="bg-white rounded-2xl p-6 md:p-8 shadow-md hover:shadow-lg hover:translate-y-[-10px] transition-all duration-500"
             >
               {/* Icon */}
               <div className="flex justify-center mb-4">{feature.icon}</div>
