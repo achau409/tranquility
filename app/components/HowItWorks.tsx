@@ -51,12 +51,12 @@ export default function HowItWorks() {
     <section className="py-12 md:py-16 bg-[#F8F8F8]">
       <div className="max-w-5xl mx-auto px-4 md:px-6">
         {/* Why Choose Us Heading */}
-        <h2 className="text-center text-lg md:text-xl font-semibold text-gray-800 mb-4">
+        <h2 className="text-center text-lg md:text-xl font-semibold  mb-4">
           How It Works
         </h2>
 
         {/* Main Title */}
-        <h3 className="text-center text-2xl md:text-4xl font-bold text-gray-900 mb-6 md:mb-8">
+        <h3 className="text-center text-3xl md:text-4xl font-bold  mb-6 md:mb-8">
           Your Dream Bathroom in Three Simple Steps{" "}
         </h3>
 
@@ -65,7 +65,7 @@ export default function HowItWorks() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="bg-white rounded-lg p-6 md:p-8 shadow-md hover:shadow-lg hover:translate-y-[-10px] transition-all duration-500"
             >
               {/* Icon */}
               <div className="flex justify-center mb-4">{feature.icon}</div>
@@ -87,7 +87,7 @@ export default function HowItWorks() {
         <div className="flex justify-center">
           <Link
             href="#hero"
-            className="bg-gradient-to-r from-[#569BFE] to-[#4A8FE8] text-white font-bold rounded-[50px] py-3 md:py-4 px-6 md:px-10 text-base md:text-lg hover:from-[#4A8FE8] hover:to-[#569BFE] transition-all duration-300 shadow-lg hover:shadow-xl inline-block"
+            className="bg-gradient-to-r from-[#569BFE] to-[#4A8FE8] text-white font-bold rounded-[50px] py-4 md:py-4 px-6 md:px-10 text-lg md:text-lg hover:from-[#4A8FE8] hover:to-[#569BFE] transition-all duration-300 shadow-lg hover:shadow-xl inline-block"
           >
             Transform Your Bathroom Today
           </Link>

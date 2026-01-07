@@ -24,20 +24,18 @@ export default function WhyUs() {
   ];
 
   return (
-    <section className="py-12 md:py-16 bg-[#F8F8F8]">
+    <section className="py-12 md:py-16 bg-[#F8F8F8] px-4 md:px-0">
       <div className="max-w-5xl mx-auto px-4 md:px-6">
         {/* Why Choose Us Heading */}
-        <h2 className="text-center text-lg  font-bold text-gray-800 mb-4">
-          Why Choose Us?
-        </h2>
+        <h2 className="text-center text-lg font-bold  mb-4">Why Choose Us?</h2>
 
         {/* Main Title */}
-        <h3 className="text-center text-xl md:text-2xl font-bold text-gray-900 mb-6 md:mb-8">
+        <h1 className="text-center text-3xl md:text-2xl font-bold  mb-6 md:mb-8">
           Your Safety and Comfort Are Our Lifetime Commitment
-        </h3>
+        </h1>
 
         {/* Descriptive Paragraph */}
-        <p className="text-center text-gray-700 text-sm md:text-base max-w-4xl mx-auto mb-12 md:mb-16 leading-relaxed">
+        <p className="text-center   text-base max-w-4xl mx-auto mb-12 md:mb-16 leading-relaxed font-semibold">
           You deserve more than a bathroom upgrade; you deserve peace of mind.
           At Tranquility Bath Remodel, we combine beautiful modern design with
           functional solutions, backed by unmatched American craftsmanship and a
@@ -52,7 +50,7 @@ export default function WhyUs() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="bg-white rounded-lg p-6 md:p-8 shadow-md hover:shadow-lg  hover:translate-y-[-10px] transition-all duration-500"
             >
               {/* Icon */}
               <div className="flex justify-center mb-4">
@@ -82,7 +80,7 @@ export default function WhyUs() {
         <div className="flex justify-center">
           <Link
             href="#hero"
-            className="bg-gradient-to-r from-[#569BFE] to-[#4A8FE8] text-white font-bold rounded-[50px] py-4 px-8 md:px-12 text-lg md:text-xl hover:from-[#4A8FE8] hover:to-[#569BFE] transition-all duration-300 shadow-lg hover:shadow-xl inline-block"
+            className="bg-gradient-to-r from-[#569BFE] to-[#4A8FE8] text-white font-bold rounded-[50px] py-4 md:py-4 px-6 md:px-10 text-lg md:text-lg hover:from-[#4A8FE8] hover:to-[#569BFE] transition-all duration-300 shadow-lg hover:shadow-xl inline-block"
           >
             Book Your FREE Consultation
           </Link>

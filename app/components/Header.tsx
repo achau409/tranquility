@@ -12,7 +12,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <Link href="/">
             <div className="">
-              <p className="text-white md:text-4xl font-semibold">
+              <p className="text-white text-3xl md:text-4xl font-semibold">
                 Tranquility Bath Remodel
               </p>
             </div>
@@ -53,9 +53,9 @@ export default function Header() {
           aria-label="Toggle menu"
         >
           <svg
-            className="w-8 h-8"
+            className="w-12 h-12"
             fill="none"
-            stroke="currentColor"
+            stroke="white"
             viewBox="0 0 24 24"
           >
             {isMenuOpen ? (
@@ -81,7 +81,7 @@ export default function Header() {
           <div className="absolute top-28 left-0 right-0 bg-white shadow-lg md:hidden z-50 transition-all duration-300">
             <nav className="flex flex-col p-4 space-y-4">
               <Link
-                href="/"
+                href="/#why-us"
                 className="hover:underline cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -97,7 +97,7 @@ export default function Header() {
               </Link>
 
               <Link
-                href="/about"
+                href="/#about"
                 className="hover:underline cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >

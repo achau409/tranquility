@@ -41,7 +41,7 @@ export default function WhyChose() {
   ];
 
   return (
-    <section className="py-8 md:py-12 bg-[#F5F5F5]">
+    <section className="py-8 md:py-12 bg-[#F5F5F5] px-4 md:px-0">
       <div className="max-w-5xl mx-auto px-4 md:px-6">
         {/* Top Section: Image and Text */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-16">
@@ -51,7 +51,7 @@ export default function WhyChose() {
               src="/onyx.png"
               alt="Modern Onyx Stone Shower"
               fill
-              className="object-cover"
+              className="object-cover hover:scale-125 transition-all duration-500"
               priority
               sizes="(max-width: 768px) 100vw, 50vw"
             />
@@ -59,22 +59,22 @@ export default function WhyChose() {
 
           {/* Text Content */}
           <div className="flex flex-col justify-center">
-            <h2 className="text-lg font-bold text-gray-900 mb-4 md:mb-6">
+            <h2 className="text-lg font-bold mb-4 md:mb-6">
               Why Choose ONYX STONE Over Plastic Alternatives?
             </h2>
 
             {/* Key Benefits */}
             <div className="flex flex-wrap gap-4 mb-4 md:mb-6">
-              <span className="text-sm md:text-2xl font-bold text-gray-900">
+              <span className="text-3xl md:text-2xl font-bold text-gray-900">
                 Quality.
               </span>
-              <span className="text-sm md:text-2xl font-bold text-gray-900">
+              <span className="text-3xl md:text-2xl font-bold text-gray-900">
                 Durability.
               </span>
-              <span className="text-sm md:text-2xl font-bold text-gray-900">
+              <span className="text-3xl md:text-2xl font-bold text-gray-900">
                 Beauty.
               </span>
-              <span className="text-sm md:text-2xl font-bold text-gray-900">
+              <span className="text-3xl md:text-2xl font-bold text-gray-900">
                 Simplicity.
               </span>
             </div>
@@ -127,10 +127,11 @@ export default function WhyChose() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col md:flex-row justify-center gap-4 items-center md:items-start"
+              className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg 
+              flex flex-col md:flex-row justify-center gap-4 items-center md:items-start hover:translate-y-[-10px] transition-all duration-500"
             >
               {/* Icon */}
-              <div className="flex justify-start mb-4">
+              <div className=" justify-start mb-4 hidden md:flex">
                 <div className="h-12 w-12">
                   <Image
                     src={feature.icon}
@@ -144,9 +145,20 @@ export default function WhyChose() {
 
               {/* Title */}
               <div>
-                <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 text-start">
-                  {feature.title}
-                </h3>
+                <div className="flex items-center gap-4">
+                  <div className="h-12 w-12 md:hidden mb-4">
+                    <Image
+                      src={feature.icon}
+                      alt={feature.title}
+                      width={1000}
+                      height={1000}
+                      className="object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold  mb-3 text-start">
+                    {feature.title}
+                  </h3>
+                </div>
 
                 {/* Description */}
                 <p className="text-gray-700 text-sm  leading-relaxed text-start">

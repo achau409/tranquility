@@ -14,7 +14,7 @@ export default function HomePage() {
     <div className="font-sans">
       {/* Hero Section */}
       <section
-        className="relative text-[#ffffff] flex items-center min-h-[500px] md:h-[550px] pt-20 md:pt-0"
+        className="relative text-[#ffffff] flex items-center min-h-[500px] md:h-[550px] pt-10 md:pt-0"
         id="hero"
       >
         {/* Background Image */}
@@ -24,7 +24,7 @@ export default function HomePage() {
             alt="Hero Background"
             fill
             priority
-            className="md:object-cover"
+            className="object-cover object-top"
           />
           {/* Overlay for better text readability */}
           <div className="absolute inset-0 bg-[rgba(0,0,0,0.2)]"></div>
@@ -33,11 +33,12 @@ export default function HomePage() {
         {/* Content */}
         <div className="relative z-10 max-w-5xl mx-auto px-4 md:px-12 w-full flex flex-col md:flex-row items-center gap-6 md:gap-8 py-8 md:py-0 pt-0">
           <div className="w-full">
-            <h1 className="text-3xl md:text-5xl font-bold leading-tight md:!leading-[55px]">
-              Transform Your <br />
-              Bathroom Into a Stylish <br />& Safe Comfort Zone{" "}
+            <h1 className="text-4xl md:text-5xl font-bold  md:!leading-[55px]">
+              Transform Your <br className="hidden md:block" />
+              Bathroom Into a Stylish <br className="hidden md:block" />& Safe
+              Comfort Zone{" "}
             </h1>
-            <p className="text-sm sm:text-base md:text-lg mt-4 md:mt-8 max-w-4xl font-[200] text-justify">
+            <p className="text-lg mt-4 md:mt-8 md:max-w-4xl  font-[200] md:text-justify">
               Experience the perfect blend of style, comfort, and quality with
               Tranquility Bath Remodel. From stunning modern shower upgrades to
               ultra-low entry walk-in tubs and accessible solutions, we deliver
@@ -47,7 +48,7 @@ export default function HomePage() {
               Lifetime warranty included. Your dream bathroom starts here.{" "}
             </p>
           </div>
-          <div className="w-full md:max-w-[330px] mt-4 md:mt-0">
+          <div className="w-full md:max-w-[330px] mt-4 md:mt-0 py-4 md:py-0">
             <ContactForm />
           </div>
         </div>
@@ -56,27 +57,30 @@ export default function HomePage() {
       {/* Features Banner Section */}
       <section className="bg-[#569BFE] py-4">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-2 md:flex md:flex-row items-center justify-center gap-4 md:gap-0">
-            <div className="text-white text-center px-2 md:px-6 flex-1">
-              <p className="text-sm md:text-base font-sans">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-0 md:gap-0">
+            <div className="text-white text-center px-2 md:px-6 flex-1 w-full md:w-auto py-2 md:py-0">
+                <p className="text-base font-bold font-sans">
                 Lowest Entry in America
               </p>
             </div>
             <div className="hidden md:block w-px h-8 bg-white/30"></div>
-            <div className="text-white text-center px-2 md:px-6 flex-1">
-              <p className="text-sm md:text-base font-sans">
+            <div className="block md:hidden w-full h-px bg-white/80"></div>
+            <div className="text-white text-center px-2 md:px-6 flex-1 w-full md:w-auto py-2 md:py-0">
+              <p className="text-base font-bold font-sans">
                 100% American Craftsmanship
               </p>
             </div>
             <div className="hidden md:block w-px h-8 bg-white/30"></div>
-            <div className="text-white text-center px-2 md:px-6 flex-1">
-              <p className="text-sm md:text-base font-sans">
+            <div className="block md:hidden w-full h-px bg-white/80"></div>
+            <div className="text-white text-center px-2 md:px-6 flex-1 w-full md:w-auto py-2 md:py-0">
+              <p className="text-base font-bold font-sans">
                 Lifetime Warranty Protection
               </p>
             </div>
             <div className="hidden md:block w-px h-8 bg-white/30"></div>
-            <div className="text-white text-center px-2 md:px-6 flex-1">
-              <p className="text-sm md:text-base font-sans">
+            <div className="block md:hidden w-full h-px bg-white/80"></div>
+            <div className="text-white text-center px-2 md:px-6 flex-1 w-full md:w-auto py-2 md:py-0">
+              <p className="text-base font-bold font-sans">
                 30% More Affordable
               </p>
             </div>
@@ -102,22 +106,22 @@ export default function HomePage() {
       <section>
         <BeforeAfter />
       </section>
-      <section className="py-12 bg-[#F5F5F5] " id="about">
+      <section className="py-12 bg-[#F5F5F5] px-4 md:px-0" id="about">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
-          <div className="flex flex-col-reverse md:flex-row md:items-start items-center justify-between md:gap-12 gap-4">
+          <div className="flex flex-col md:flex-row md:items-start items-center justify-between md:gap-12 gap-4">
             <Image
               src="/aboutImg.png"
               alt="Business Meeting"
               width={1000}
               height={1000}
-              className="object-cover h-[380px]"
+              className="object-cover md:h-[380px] h-[280px]"
             />
-            <div className="w-full text-center md:text-left">
-              <h2 className="text-2xl font-semibold mb-4">About Us</h2>
-              <h2 className="text-2xl md:text-[32px] font-semibold mb-4">
+            <div className="w-full text-left">
+              <h2 className="text-xl font-bold mb-4">About Us</h2>
+              <h2 className="text-3xl md:text-[32px] font-bold mb-4">
                 Meet Our Remodeling Experts{" "}
               </h2>
-              <p className="text-gray-600 mb-4 text-[16px] text-justify leading-8">
+              <p className=" mb-4 text-base text-justify ">
                 Tranquility Bath Remodel, based in Idaho, has earned a
                 reputation for creating stylish, safe, and affordable bathroom
                 solutions. Our certified team is dedicated to providing premium
@@ -140,7 +144,7 @@ export default function HomePage() {
       </section>
 
       {/* Let's Build Section */}
-      <section className="relative flex items-center min-h-[500px] md:min-h-[440px] py-12 md:py-16 ">
+      <section className="relative flex items-center min-h-[500px] md:min-h-[440px] py-12 md:py-16 px-4 md:px-0">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -148,10 +152,10 @@ export default function HomePage() {
             alt="Modern Bathroom Background"
             fill
             priority
-            className="object-cover"
+            className="md:object-cover"
           />
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-[rgba(0,0,0,0.16)]"></div>
+          <div className="absolute inset-0 bg-[rgba(0,0,0,0.07)]"></div>
         </div>
 
         {/* Content Container */}
@@ -159,13 +163,13 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row justify-between gap-6 md:gap-8 items-center">
             {/* Headline and Text */}
             <div className="md:max-w-[45%]">
-              <h2 className="text-xl md:text-4xl font-bold text-white mb-4 md:mb-6">
-                Let's Build the Bathroom <br />
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 md:mb-6 max-w-xs md:max-w-none">
+                Let's Build the Bathroom <br className="hidden md:block" />
                 You've Been Dreaming Of
               </h2>
 
               {/* Body Paragraph */}
-              <p className="text-white text-sm mb-6 md:mb-8 leading-relaxed text-justify">
+              <p className="text-white text-base mb-6 md:mb-8 leading-relaxed text-justify">
                 Take the first step toward a bathroom designed for comfort,
                 style, and functionality. Whether you want a beautiful shower
                 upgrade that elevates your space, a walk-in tub for worry-free

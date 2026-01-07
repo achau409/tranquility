@@ -16,17 +16,17 @@ export default function Gallery() {
   ];
 
   return (
-    <section className="py-6 md:py-12">
+    <section className="py-8 md:py-12 px-4 md:px-0">
       <div className="max-w-5xl mx-auto px-4 md:px-6">
         {/* Gallery Title */}
-        <h2 className="text-center text-base md:text-xl font-semibold mb-2 md:mb-4">
+        <h2 className="text-center text-lg md:text-xl font-bold mb-2 md:mb-4">
           Gallery
         </h2>
 
         {/* Main Title */}
-        <h3 className="text-center text-xl md:text-3xl font-bold mb-8 md:mb-12 px-2">
+        <h1 className="text-center text-[28px] md:text-3xl font-bold mb-8 md:mb-12 px-2">
           Bathrooms Built for Comfort and Style
-        </h3>
+        </h1>
 
         {/* Desktop: Category Labels - Horizontal */}
         <div className="hidden md:flex flex-row justify-center items-center gap-96 mb-6 max-w-5xl mx-auto">
@@ -46,7 +46,7 @@ export default function Gallery() {
               src="/shower.png"
               alt="Modern walk-in shower"
               fill
-              className="object-cover"
+              className="object-cover hover:scale-125 transition-all duration-500"
               priority
               sizes="50vw"
             />
@@ -58,7 +58,7 @@ export default function Gallery() {
               src="/tubs.png"
               alt="Modern walk-in tub"
               fill
-              className="object-cover"
+              className="object-cover hover:scale-125 transition-all duration-500"
               priority
               sizes="50vw"
             />
@@ -77,7 +77,7 @@ export default function Gallery() {
                 src={image}
                 alt={`Shower ${index + 1}`}
                 fill
-                className="object-cover cursor-pointer hover:scale-105 transition-all duration-300"
+                  className="object-cover cursor-pointer hover:scale-125 transition-all duration-500"
                 sizes="25vw"
               />
             </div>
@@ -93,7 +93,7 @@ export default function Gallery() {
                 src={image}
                 alt={`Walk-in tub ${index + 1}`}
                 fill
-                className="object-cover cursor-pointer hover:scale-105 transition-all duration-300"
+                className="object-cover cursor-pointer hover:scale-125 transition-all duration-500"
                 sizes="25vw"
               />
             </div>
@@ -109,7 +109,7 @@ export default function Gallery() {
                 src={image}
                 alt={`Shower ${index + 3}`}
                 fill
-                className="object-cover cursor-pointer hover:scale-105 transition-all duration-300"
+                className="object-cover cursor-pointer hover:scale-125 transition-all duration-500"
                 sizes="25vw"
               />
             </div>
@@ -125,7 +125,7 @@ export default function Gallery() {
                 src={image}
                 alt={`Walk-in tub ${index + 3}`}
                 fill
-                className="object-cover cursor-pointer hover:scale-105 transition-all duration-300"
+                className="object-cover cursor-pointer hover:scale-125 transition-all duration-500"
                 sizes="25vw"
               />
             </div>

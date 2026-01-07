@@ -30,20 +30,18 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-8 md:py-12 bg-white">
+    <section className="py-8 md:py-12 bg-white px-4 md:px-0">
       <div className="max-w-5xl mx-auto px-4 md:px-0">
         {/* Subtitle */}
-        <h3 className="text-center text-sm md:text-lg text-gray-600 mb-2 font-bold">
-          Our Services
-        </h3>
+        <h3 className="text-center text-lg  mb-2 font-bold">Our Services</h3>
 
         {/* Main Title */}
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-4 md:mb-6">
+        <h1 className="text-3xl md:text-3xl font-bold text-center mb-4 md:mb-6">
           Complete Bathroom Solutions Designed for Your Life
-        </h2>
+        </h1>
 
         {/* Descriptive Paragraph */}
-        <p className="text-center text-gray-700 text-sm md:text-base max-w-4xl mx-auto mb-8 md:mb-12 leading-relaxed">
+        <p className="text-center text-base max-w-4xl mx-auto mb-8 md:mb-12 leading-relaxed">
           Tranquility Bath Remodel offers tailored solutions that blend style,
           durability, and function. Every tub and shower is built with
           American-made excellence and backed by a lifetime warranty. Whether
@@ -55,24 +53,25 @@ export default function Services() {
         {/* Services Grid - 2x2 with vertical dashed line */}
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
           {services.map((service, index) => (
-            <div key={index} className="relative group overflow-visible mb-24">
+            <div
+              key={index}
+              className="relative group overflow-visible md:mb-24 mb-40 hover:translate-y-[-10px] transition-all duration-500"
+            >
               {/* Image Container */}
               <div className="relative w-full h-[300px] md:h-[350px] overflow-hidden ">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer"
+                  className="object-cover transition-transform duration-500 group-hover:scale-125 cursor-pointer"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
 
               {/* Text Box Overlay - Partially overlapping the image */}
-              <div className="absolute bottom-[-80px] left-4 right-4 bg-white rounded-lg p-4 md:p-6 shadow-xl text-center">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  {service.title}
-                </h3>
-                <p className="text-sm  text-gray-700 leading-relaxed">
+              <div className="absolute bottom-[-140px] md:bottom-[-80px] left-4 right-4 bg-white rounded-lg p-2 !py-6 md:p-6 shadow-xl text-center">
+                <h3 className="text-lg font-bold mb-4">{service.title}</h3>
+                <p className="text-sm  leading-relaxed">
                   {service.description}
                 </p>
               </div>

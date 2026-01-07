@@ -17,10 +17,10 @@ export default function BeforeAfter() {
   ];
 
   return (
-    <section className="py-6 md:py-12 bg-[#F8F8F8]">
+    <section className="py-6 md:py-12 bg-[#F8F8F8] px-4 md:px-0">
       <div className="max-w-5xl mx-auto px-4 md:px-6">
         {/* Main Title */}
-        <h2 className="text-center text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12">
+        <h2 className="text-center text-3xl md:text-3xl font-bold mb-8 md:mb-12">
           Before and After
         </h2>
 
@@ -37,7 +37,7 @@ export default function BeforeAfter() {
                   src={transformation.before}
                   alt={`Before transformation ${index + 1}`}
                   fill
-                  className="object-cover"
+                  className="object-cover hover:scale-125 transition-all duration-500"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 {/* Before Label */}
@@ -52,7 +52,7 @@ export default function BeforeAfter() {
                   src={transformation.after}
                   alt={`After transformation ${index + 1}`}
                   fill
-                  className="object-cover"
+                  className="object-cover hover:scale-125 transition-all duration-500"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 {/* After Label */}
