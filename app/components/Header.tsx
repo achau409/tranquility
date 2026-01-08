@@ -12,7 +12,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <Link href="/">
             <div className="">
-              <p className="text-white text-3xl md:text-4xl font-semibold">
+              <p className="text-white text-[32px] md:text-4xl font-semibold leading-[2.25rem]">
                 Tranquility Bath Remodel
               </p>
             </div>
