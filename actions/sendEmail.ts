@@ -41,8 +41,8 @@ export const sendEmail = async (formData: FormData) => {
     );
 
     data = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
-      to: "leads@neuhomeservices.com",
+      from: "Contact Form <Admin_1@tranquilitybath.com>",
+      to: "achau409@mtroyal.ca",
       subject: `New Contact Form Submission from ${fullName}`,
       reply_to: senderEmail as string,
       html: emailHtml,
