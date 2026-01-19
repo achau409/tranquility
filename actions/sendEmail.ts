@@ -12,6 +12,7 @@ export const sendEmail = async (formData: FormData) => {
   const fullName = formData.get("fullName");
   const phone = formData.get("phone");
   const senderEmail = formData.get("senderEmail");
+  const interest = formData.get("interest");
 
   // simple server-side validation
   if (!validateString(fullName, 100)) {
@@ -29,6 +30,11 @@ export const sendEmail = async (formData: FormData) => {
       error: "Invalid sender email",
     };
   }
+  if (!validateString(interest, 50)) {
+    return {
+      error: "Please select an interest option",
+    };
+  }
 
   let data;
   try {
@@ -37,12 +43,13 @@ export const sendEmail = async (formData: FormData) => {
         fullName: fullName as string,
         phone: phone as string,
         senderEmail: senderEmail as string,
+        interest: interest as string,
       })
     );
 
     data = await resend.emails.send({
       from: "Contact Form <Admin_1@tranquilitybath.com>",
-      to: "achau409@mtroyal.ca",
+      to: "Matt@tranquilitybath.com ",
       subject: `New Contact Form Submission from ${fullName}`,
       reply_to: senderEmail as string,
       html: emailHtml,

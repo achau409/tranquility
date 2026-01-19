@@ -8,7 +8,7 @@ export default function ContactForm() {
   const formRef = useRef<HTMLFormElement>(null);
 
   return (
-    <div className="max-h-[400px] bg-[rgba(53,53,53,0.6)] text-white flex flex-col items-center justify-center rounded-[10px] stroke-[rgba(255,255,255,0.3)] backdrop-blur-sm px-8 py-6">
+    <div className="max-h-[520px] bg-[rgba(53,53,53,0.6)] text-white flex flex-col items-center justify-center rounded-[10px] stroke-[rgba(255,255,255,0.3)] backdrop-blur-sm px-8 py-6">
       <h2 className="text-xl font-bold text-center mb-2">
         Sign Up & Get 10% Off with a FREE Quote Today
       </h2>
@@ -52,6 +52,41 @@ export default function ContactForm() {
               required
               className="w-full border border-gray-300 bg-white text-black p-1.5 rounded"
             />
+          </div>
+          <div className="w-full">
+            <label className="block text-white mb-1">What are you interested in? *</label>
+            <div className="flex  flex-col space-y-2 mt-2">
+              <label className="flex items-center text-white cursor-pointer">
+                <input
+                  type="radio"
+                  name="interest"
+                  value="Walk in Shower"
+                  required
+                  className="mr-2 text-sm"
+                />
+                Walk in Shower
+              </label>
+              <label className="flex items-center text-white cursor-pointer">
+                <input
+                  type="radio"
+                  name="interest"
+                  value="walk in tub"
+                  required
+                  className="mr-2 text-sm"
+                />
+                walk in tub
+              </label>
+              <label className="flex items-center text-white cursor-pointer">
+                <input
+                  type="radio"
+                  name="interest"
+                  value="Both / Not Sure"
+                  required
+                  className="mr-2 text-sm"
+                />
+                Both / Not Sure
+              </label>
+            </div>
           </div>
           <button
             type="submit"
