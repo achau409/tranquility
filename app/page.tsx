@@ -59,7 +59,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row items-center justify-center gap-0 md:gap-0">
             <div className="text-white text-center px-2 md:px-6 flex-1 w-full md:w-auto py-2 md:py-0">
-                <p className="text-base font-bold font-sans">
+              <p className="text-base font-bold font-sans">
                 Lowest Entry in America
               </p>
             </div>
@@ -210,6 +210,22 @@ export default function HomePage() {
           deliver bathrooms that are stylish, safe, and built to last.
         </p>
       </section>
+
+      <a
+        href="tel:18885012090"
+        className="md:hidden text-xl  font-bold fixed bottom-6 right-6 z-50 flex h-14 p-4  px-8 items-center justify-center rounded-full bg-[#569BFE] text-white shadow-xl"
+        aria-label="Call 1-888-501-2090"
+      >
+        Call us now{" "}
+        <svg
+          aria-hidden="true"
+          className="h-6 w-6 ml-2"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24c1.12.37 2.33.57 3.59.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C9.16 21 3 14.84 3 7a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.26.2 2.47.57 3.59a1 1 0 0 1-.24 1z" />
+        </svg>
+      </a>
     </div>
   );
 }

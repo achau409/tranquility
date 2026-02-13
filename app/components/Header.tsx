@@ -34,7 +34,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-10 text-white font-bold text-sm uppercase">
+        <nav className="hidden md:flex items-center space-x-10 text-white font-bold text-sm uppercase">
           <Link href="/#why-us" className="hover:underline cursor-pointer">
             Why Us
           </Link>
@@ -44,6 +44,20 @@ export default function Header() {
           <Link href="/#about" className="hover:underline cursor-pointer">
             About Us
           </Link>
+          <a
+            href="tel:18885012090"
+            className="flex items-center gap-2  text-lg font-extrabold text-white hover:underline"
+          >
+            <svg
+              aria-hidden="true"
+              className="h-4 w-4"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24c1.12.37 2.33.57 3.59.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C9.16 21 3 14.84 3 7a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.26.2 2.47.57 3.59a1 1 0 0 1-.24 1z" />
+            </svg>
+            1-888-501-2090
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}

@@ -7,6 +7,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           {/* Copyright */}
           <div className="text-sm md:text-base">© Tranquility Bath Remodel</div>
+          <p className="text-sm md:text-base">General Contractor Registration # <strong>6471981</strong></p>
 
           {/* Privacy Policy Link */}
           <div>
